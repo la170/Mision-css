@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+/*  */
+
+*{
+    margin:0%; 
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+   height: 100%;
+   width: 100%;
+   font: size 20px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+:root{
+    --fucshia: hsl(333, 100%, 43%);
+    --fucshia2: hsla(333, 100%, 43%, 0.548);
+    --white:hsl(0, 0%, 100%);
+    --whitetransparent:hsla(0, 0%, 100%, 0.741);
+    --gray:hsl(0, 8%, 91%);
+    --blue:hsl(227, 65%, 16%);
+    --blackTransparent:hsla(0, 0%, 0%, 0.822);
+    --darkgray:hsl(0, 1%, 50%);
+    --darkgray2:hsl(0, 1%, 22%);
+}
+
+
+.container_All_Block_two_doncan{
+    width:100%;
+    height:100%;
+    background-color:var(--gray);
+    display: flex;
+}
+.container_doncan{
+    background-color:crimson;
+    width:100%;
+
+    padding:1%;
+}
+.title_doncan 
+{background-color:royalblue;
+    padding:1%;
+}
+.text_doncan{
+    background-color:grey;
+    margin: 2%;
+}
+.button_doncan{
+    background-color:blueviolet;
+    padding:1%;
+}
+.img_doncan{
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
 footer{
     background-color: var(--blue);
     color: var(--white);
