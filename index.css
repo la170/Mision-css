@@ -25,37 +25,110 @@ body{
     --darkgray:hsl(0, 1%, 50%);
     --darkgray2:hsl(0, 1%, 22%);
 }
-
-
+/* seccion2 -------------------------------------------------------seccion2 */
 .container_All_Block_two_seccion2{
     width:100%;
-    height:100%;
+    height: 650px;
     background-color:var(--gray);
     display: flex;
+}
+.container_seccion2_col_1{
+    background-color:crimson;
+    width:100%;
+    height: 650px;
+    padding:1%;
+    gap: 2%;
+    display: flex;
+    flex-direction: column;
 }
 .container_seccion2{
     background-color:crimson;
     width:100%;
-
+    height: 500px;
     padding:1%;
+    gap: 2%;
+    display: flex;
+    flex-direction: column;
+}
+/* -------------col-1----------------- */
+.container_title_seccion2_col_1{
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 10%;
 }
 .title_seccion2 
 {background-color:royalblue;
     padding:1%;
+    display: flex;
+    justify-content: end;
+}
+
+.container_parrafos_seccion2_col_1{
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    width: 100%;
+    height: 60%;
 }
 .text_seccion2{
-    background-color:grey;
-    margin: 2%;
+display:flex ;
+justify-content: end;
+background-color:grey;
+border: solid;
+width: auto;
+height: auto;
 }
 .button_seccion2{
+    width: 50%;
     background-color:blueviolet;
     padding:1%;
 }
+/* -------------col-2----------------- */
 .img_seccion2{
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100%;}
+
+/* seccion6 -------------------------------------------------------seccion6 */
+.container_All_Block_six_seccion6{
+    width:100%;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    background-color:var(--gray);
 }
+.container_seccion6_row_1{
+background-color:crimson;
+width:100%;
+height:20%;   
+padding:1%;
+gap: 2%;
+display: flex;
+flex-direction: column;
+}
+
+.container_seccion6_row_2{
+    background-color:violet;
+    width:100%;
+    height:30%;   
+    padding:1%;
+    gap: 2%;
+    display: flex;
+    }
+    .container_seccion6_row_3{
+        background-color:purple;
+        width:100%;
+        height:50%;   
+        padding:1%;
+        gap: 2%;
+        display: flex;
+        flex-direction: column;
+        }
 footer{
     background-color: var(--blue);
     color: var(--white);
