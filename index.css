@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -70,9 +72,100 @@ ul{
     background-repeat: no-repeat;
 }
 .text{
+    display: flex;
+    flex-direction: column;
     background-color: var(--blackTransparent);
+    color: var(--white);
+    font-weight: 700;
     height: 100vh;
+    font-size: 7rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.h5{
+    padding-bottom: 20px;
+}
+.boton{
+    display: flex;
+    background-color: var(--fucshia);
+    height: 5%;
+    width: 15rem;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+}
+/* ------------------------------------------------------------------------- */
+
+.c-ontainer{
+    display: grid;
+    grid-template-rows: 20rem 20rem 15rem;
+    grid-template-columns: 15rem 15rem 15rem;
+}
+.grid{
+    border: 1px solid #555;
+    display: flex;
+    color: #AAA;
+}
+
+.proyect{
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    height: 0;
+    background-color: var(--fucshia2);
+    overflow: hidden;
+    visibility: hidden;
+    text-align: center;
+}
+
+.grid:hover .proyect{
+    transition: all 1s ease-in-out;
+    height: 100%;
+    visibility: visible;
+}
+.grid-1{
+    background-image: url(./asset/portfolio-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+
+}
+
+.grid-2{
+    background-image: url(./asset/portfolio-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid-3{
+    background-image: url(./asset/portfolio-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid-4{
+    background-image: url(./asset/portfolio-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid-5{
+    background-image: url(./asset/portfolio-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid-6{
+    background-image: url(./asset/portfolio-6.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
 footer{
     background-color: var(--blue);
     color: var(--white);
