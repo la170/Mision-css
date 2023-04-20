@@ -16,8 +16,12 @@
     --darkgray:hsl(0, 1%, 50%);
     --darkgray2:hsl(0, 1%, 22%);
 }
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; 
 }
 nav{
     background-color: var(--blue);
@@ -26,6 +30,8 @@ nav{
 
 }
 .menu{
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     font-weight: 600;
@@ -67,9 +73,9 @@ ul{
 }
 .bienvenido{
     background-image: url(./asset/background__welcome.jpg);
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 .text{
     display: flex;
@@ -99,22 +105,35 @@ ul{
     border: none;
     color: var(--white);
     font-weight: 600;
+    border: none;
+}
+.boton:hover{
+    background-color: var(--white);
+    color: var(--fucshia);
+    border: 1px solid var(--fucshia);
 }
 /* ------------------------------------------------------------------------- */
 
 .c-ontainer{
     display: grid;
-    grid-template-rows: 20rem 20rem 15rem;
-    grid-template-columns: 15rem 15rem 15rem;
+    place-content: center;
+    grid-template-rows: 30rem 22rem 22rem;
+    grid-template-columns: 25rem 25rem 25rem;
+    padding-top: 20px;
 }
-.grid{
-    border: 1px solid #555;
-    display: flex;
-    color: #AAA;
+.seccion4{
+    text-align: center;
+    display: grid;
+}
+.titulo--{
+    border-top: 3px solid var(--fucshia);
+    border-bottom: 3px solid var(--fucshia);
+    padding: 7px;
+    width: 13%;
+    margin: 0 auto;
 }
 
 .proyect{
-    height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,7 +145,17 @@ ul{
     visibility: hidden;
     text-align: center;
 }
-
+.text_{
+    padding: 50px;
+    height: 90%;
+    width: 90%;
+    border: 2px solid ;
+    font-size: 25px;
+}
+.paragraph{
+    padding-top: 1rem;
+    font-size: 20px;
+}
 .grid:hover .proyect{
     transition: all 1s ease-in-out;
     height: 100%;
@@ -136,10 +165,7 @@ ul{
     background-image: url(./asset/portfolio-1.jpg);
     background-size: cover;
     background-position: center;
-    height: 20rem;
-
 }
-
 .grid-2{
     background-image: url(./asset/portfolio-2.jpg);
     background-size: cover;
@@ -165,7 +191,6 @@ ul{
     background-size: cover;
     background-position: center; 
 }
-
 footer{
     background-color: var(--blue);
     color: var(--white);
